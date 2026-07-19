@@ -4,88 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cafés de Mérida</title>
 
-    <style>
-        body {
-            font-family: "Times New Roman", Times, serif;
-            text-align: center;
-            max-width: 800px;
-            margin: auto;
-            padding: 30px;
-            line-height: 1.6;
-            background-color: #fdfaf6;
-        }
-
-        h1 {
-            color: #7f326b;
-        }
-
-        h2 {
-            color: #b6406c;
-        }
-
-        h3 {
-            color: #795548;
-        }
-
-        ul {
-            list-style-position: inside;
-            padding: 0;
-        }
-
-        hr {
-            width: 60%;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Guía especializada de Cafeterías de Mérida, Yucatán</h1>
+    <header class="encabezado">
+        <nav class="navegacion">
 
-    <p>
-        Bienvenido a esta pequeña guía donde encontrarás algunas cafeterías
-        recomendadas para disfrutar de un buen café y un ambiente agradable
-        en la ciudad de Mérida. ☕️✨
-    </p>
+            <a href="#inicio" class="logo">
+                Cafés de Mérida
+            </a>
 
-    <hr>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cafeterias">Cafeterías</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
 
-    <h2>Top Picks</h2>
+        </nav>
+    </header>
 
-    <h3>Café Relato, Casa Tostadora</h3>
-    <p>
-        Ideal para quienes disfrutan del café de especialidad.
-        Cuenta con un ambiente tranquilo y un excelente servicio.
-    </p>
+    <main>
 
-    <h3>MUR MURA</h3>
-    <p>
-        Un lugar muy conocido por su café y matcha, desayunos y ambiente acogedor.
-    </p>
+        <section class="hero" id="inicio">
 
-    <h3>Arista Barista</h3>
-    <p>
-        Perfecto para trabajar o reunirse con amigos.
-        Ambiente relajado y bebidas diversas.
-    </p>
+            <div class="hero-contenido">
 
-    <hr>
+                <h1>
+                    Guía especializada de Cafeterías de Mérida, Yucatán
+                </h1>
 
-    <h2>¿Qué encontrarás en esta página?</h2>
+                <p>
+                    Descubre las mejores cafeterías de la ciudad
+                </p>
 
-    <ul>
-        <li>Cafeterías recomendadas.</li>
-        <li>Descripción de cada lugar y sus mejores productos.</li>
-        <li>Ubicación.</li>
-        <li>Calificaciones y opiniones.</li>
-    </ul>
+                <a href="#cafeterias" class="boton">
+                    Explorar cafeterías
+                </a>
 
-    <p>
-        Esta es mi página de práctica de HTML utilizando GitHub Pages. :)
-    </p>
+            </div>
+
+        </section>
+
+        <section class="cafeterias" id="cafeterias">
+
+            <h2>Top Picks</h2>
+
+            <div class="contenedor-tarjetas">
+
+                <article class="tarjeta">
+
+                    <img
+                        src="imagenes/relato.jpg"
+                        alt="Café Relato, Casa Tostadora"
+                    >
+
+                    <div class="tarjeta-contenido">
+
+                        <h3>Café Relato</h3>
+
+                        <p>
+                            Café de especialidad en un ambiente tranquilo
+                            y agradable.
+                        </p>
+
+                        <a href="#">
+                            Ver más →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="tarjeta">
+
+                    <img
+                        src="imagenes/murmura.jpg"
+                        alt="Cafetería MUR MURA"
+                    >
+
+                    <div class="tarjeta-contenido">
+
+                        <h3>MUR MURA</h3>
+
+                        <p>
+                            Café, matcha, desayunos y un espacio acogedor.
+                        </p>
+
+                        <a href="#">
+                            Ver más →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="tarjeta">
+
+                    <img
+                        src="imagenes/arista.jpg"
+                        alt="Cafetería Arista Barista"
+                    >
+
+                    <div class="tarjeta-contenido">
+
+                        <h3>Arista Barista</h3>
+
+                        <p>
+                            Un lugar relajado para trabajar, reunirse
+                            y disfrutar diferentes bebidas.
+                        </p>
+
+                        <a href="#">
+                            Ver más →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+<section class="mapa" id="mapa">
+
+    <h2>Explora las cafeterías en el mapa</h2>
+
+    <iframe
+        src="https://www.google.com/maps?q=M%C3%A9rida,Yucat%C3%A1n&output=embed"
+        title="Mapa de cafeterías en Mérida, Yucatán"
+        width="100%"
+        height="400"
+        style="border: 0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</section>
+
+        <section class="sobre" id="sobre">
+
+            <h2>Sobre la guía</h2>
+
+            <p>
+                Esta guía reúne algunas cafeterías recomendadas de Mérida
+                para descubrir nuevos espacios, disfrutar café de especialidad
+                y conocer diferentes ambientes de la ciudad.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+
+        <p>
+            © 2026 Cafés de Mérida
+        </p>
+
+    </footer>
 
 </body>
 
