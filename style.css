@@ -84,7 +84,7 @@ body {
 .hero-contenido {
     max-width: 900px;
     padding: 40px 25px;
-    color: white;
+    color: #ffffff;
 }
 
 .hero h1 {
@@ -225,6 +225,102 @@ body {
     font-size: 1.05rem;
 }
 
+/* Sección para recomendar una cafetería */
+
+.recomendacion {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #eee5db;
+    text-align: center;
+}
+
+.recomendacion h2 {
+    margin-bottom: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.recomendacion > p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+#formularioRecomendacion {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#formularioRecomendacion label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+#formularioRecomendacion input,
+#formularioRecomendacion textarea {
+    width: 100%;
+    padding: 15px;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    border: 1px solid #b8a89b;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+#formularioRecomendacion input:focus,
+#formularioRecomendacion textarea:focus {
+    border-color: #5c3b2e;
+    outline: 2px solid rgba(92, 59, 46, 0.15);
+}
+
+#formularioRecomendacion textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+#formularioRecomendacion button {
+    align-self: center;
+    margin-top: 15px;
+    padding: 15px 35px;
+
+    color: #ffffff;
+    background-color: #5c3b2e;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#formularioRecomendacion button:hover {
+    background-color: #7b5141;
+    transform: translateY(-2px);
+}
+
+#mensajeConfirmacion {
+    margin-top: 25px;
+    color: #2d6a4f;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+#mensajeConfirmacion:not(:empty) {
+    padding: 15px;
+    background-color: #edf7ed;
+}
+
 /* Footer */
 
 footer {
@@ -263,4 +359,21 @@ footer {
         margin: auto;
     }
 
+    .mapa {
+        padding: 0 15px;
+    }
+
+    .sobre {
+        margin: 30px 15px;
+        padding: 30px 20px;
+    }
+
+    .recomendacion {
+        margin: 30px 15px;
+        padding: 30px 20px;
+    }
+
+    #formularioRecomendacion {
+        max-width: 100%;
+    }
 }

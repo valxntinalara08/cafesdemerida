@@ -132,22 +132,22 @@
 
         </section>
 
-<section class="mapa" id="mapa">
+        <section class="mapa" id="mapa">
 
-    <h2>Explora las cafeterías en el mapa</h2>
+            <h2>Explora las cafeterías en el mapa</h2>
 
-    <iframe
-        src="https://www.google.com/maps?q=M%C3%A9rida,Yucat%C3%A1n&output=embed"
-        title="Mapa de cafeterías en Mérida, Yucatán"
-        width="100%"
-        height="400"
-        style="border: 0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+            <iframe
+                src="https://www.google.com/maps?q=M%C3%A9rida,Yucat%C3%A1n&output=embed"
+                title="Mapa de cafeterías en Mérida, Yucatán"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
 
-</section>
+        </section>
 
         <section class="sobre" id="sobre">
 
@@ -161,6 +161,51 @@
 
         </section>
 
+        <section class="recomendacion" id="recomendacion">
+
+            <h2>Recomienda una cafetería</h2>
+
+            <p>
+                ¿Conoces alguna cafetería que debería aparecer en esta guía?
+                Compárteme tu recomendación.
+            </p>
+
+            <form id="formularioRecomendacion">
+
+                <label for="nombre">Tu nombre</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+
+                <label for="cafeteria">Nombre de la cafetería</label>
+                <input
+                    type="text"
+                    id="cafeteria"
+                    placeholder="Ejemplo: Café Central"
+                    required
+                >
+
+                <label for="comentario">¿Por qué la recomiendas?</label>
+                <textarea
+                    id="comentario"
+                    rows="4"
+                    placeholder="Cuéntame qué te gustó del lugar"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar recomendación
+                </button>
+
+            </form>
+
+            <p id="mensajeConfirmacion"></p>
+
+        </section>
+
     </main>
 
     <footer id="contacto">
@@ -170,6 +215,8 @@
         </p>
 
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
