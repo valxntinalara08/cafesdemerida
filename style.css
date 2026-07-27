@@ -225,82 +225,102 @@ body {
     font-size: 1.05rem;
 }
 
-/* Sección para recomendar una cafetería */
+/* Recomienda una cafetería */
 
 .recomendacion {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 40px;
-    background-color: #eee5db;
+    max-width: 760px;
+    margin: 60px auto;
+    padding: 35px 40px;
+
+    background-color: transparent;
+    border: 1px solid #b9aa9e;
+    border-radius: 10px;
+
     text-align: center;
 }
 
 .recomendacion h2 {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+
     font-family: Georgia, "Times New Roman", serif;
     font-size: 2rem;
     font-weight: normal;
 }
 
 .recomendacion > p {
-    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto 28px;
+
+    color: #5d544e;
     line-height: 1.6;
 }
 
 #formularioRecomendacion {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    max-width: 700px;
+    gap: 8px;
+
+    max-width: 600px;
     margin: 0 auto;
+
     text-align: left;
 }
 
 #formularioRecomendacion label {
-    margin-top: 8px;
+    margin-top: 14px;
+    font-size: 0.95rem;
     font-weight: bold;
 }
 
 #formularioRecomendacion input,
 #formularioRecomendacion textarea {
     width: 100%;
-    padding: 15px;
+    padding: 12px 14px;
+
+    color: #2b2521;
+    background-color: transparent;
 
     font-family: inherit;
     font-size: 1rem;
 
-    border: 1px solid #b8a89b;
-    border-radius: 8px;
-    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #9f9187;
+    border-radius: 0;
+
+    outline: none;
 }
 
 #formularioRecomendacion input:focus,
 #formularioRecomendacion textarea:focus {
-    border-color: #5c3b2e;
-    outline: 2px solid rgba(92, 59, 46, 0.15);
+    border-bottom-color: #5c3b2e;
+    outline: none;
 }
 
 #formularioRecomendacion textarea {
-    min-height: 130px;
+    min-height: 90px;
     resize: vertical;
+
+    border: 1px solid #9f9187;
+    border-radius: 6px;
 }
 
 #formularioRecomendacion button {
     align-self: center;
-    margin-top: 15px;
-    padding: 15px 35px;
+
+    margin-top: 22px;
+    padding: 11px 28px;
 
     color: #ffffff;
     background-color: #5c3b2e;
 
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: bold;
 
     border: none;
-    border-radius: 30px;
-    cursor: pointer;
+    border-radius: 4px;
 
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -310,26 +330,34 @@ body {
 }
 
 #mensajeConfirmacion {
-    margin-top: 25px;
+    max-width: 600px;
+    margin: 20px auto 0;
+
     color: #2d6a4f;
+    font-size: 0.95rem;
     font-weight: bold;
-    border-radius: 8px;
+
+    border-radius: 6px;
 }
 
 #mensajeConfirmacion:not(:empty) {
-    padding: 15px;
+    padding: 12px;
     background-color: #edf7ed;
+    border: 1px solid #bdd7c2;
 }
-
 /* Footer */
 
+
 footer {
+    width: 100%;
+    margin-top: 50px;
     padding: 25px;
+
     color: #ffffff;
     background-color: #33261f;
+
     text-align: center;
 }
-
 /* Diseño para celular */
 
 @media (max-width: 768px) {
@@ -370,7 +398,7 @@ footer {
 
     .recomendacion {
         margin: 30px 15px;
-        padding: 30px 20px;
+        padding: 28px 20px;
     }
 
     #formularioRecomendacion {
